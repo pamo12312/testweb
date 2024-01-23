@@ -40,16 +40,18 @@ function renderBanks(banks) {
         let buttonColor = "";
 let buttonn=""
         if (bank.done === true) {
-            buttonColor ="green";
-buttonn="underline"
+            buttonColor ="#34D399";
+            buttonn="none"
 
         } else  {
-            buttonColor = "grey";
+            buttonColor = "#9CA3AF";
+            buttonn="line-through"
+
         }
 
         bankElement.innerHTML = `
 
-       
+      
         <div class="dol" style=" background-color: ${buttonColor}">
             <div class="nadpis" style="text-decoration: ${buttonn}"><b>${bank.title}</b></div>
             <div class="podnadpis" style="text-decoration: ${buttonn}">${bank.loan_interest_rate}</div>
