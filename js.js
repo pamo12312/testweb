@@ -1,27 +1,27 @@
 const data = {
     "banks": [
         {
-            "overall_score": false,
+            "done": false,
             "title": "title",
-            "loan_interest_rate": "podnadpis",
+            "loan_interest_rate": "amet, consectetuer adipiscing elit. Aenean id metus id velit ullamcorper pulvinar.",
+
+        },
+        ,
+        {
+            "done": true,
+            "title": "title",
+            "loan_interest_rate": "amet, consectetuer adipiscing elit. Aenean id metus id velit ullamcorper pulvinar.",
 
         },
         {
-            "overall_score": false,
+            "done": false,
             "title": "title",
-            "loan_interest_rate": "podnadpis",
+            "loan_interest_rate": "pamet, consectetuer adipiscing elit. Aenean id metus id velit ullamcorper pulvinar.",
 
         },
-        {
-            "overall_score": true,
-            "title": "title",
-            "loan_interest_rate": "podnadpis",
-
-        },
-        {
-            "overall_score": true,
-            "title": "title",
-            "loan_interest_rate": "podnadpis",
+        {    "title": "title",
+            "done": true,
+            "loan_interest_rate": "amet, consectetuer adipiscing elit. Aenean id metus id velit ullamcorper pulvinar.",
 
         }
     ]
@@ -38,20 +38,21 @@ function renderBanks(banks) {
         bankElement.className = "bank";
 
         let buttonColor = "";
-
-        if (bank.overall_score == true) {
-            buttonColor ="red";
+let buttonn=""
+        if (bank.done === true) {
+            buttonColor ="green";
+buttonn="underline"
 
         } else  {
-            buttonColor = "orange";
+            buttonColor = "grey";
         }
 
         bankElement.innerHTML = `
 
        
-        <div class="dol" style="background-color: ${buttonColor}">
-            <p>${bank.title}</p>
-            <p>${bank.loan_interest_rate}</p>
+        <div class="dol" style=" background-color: ${buttonColor}">
+            <div class="nadpis" style="text-decoration: ${buttonn}"><b>${bank.title}</b></div>
+            <div class="podnadpis" style="text-decoration: ${buttonn}">${bank.loan_interest_rate}</div>
               </div>
         `;
 
