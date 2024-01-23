@@ -1,0 +1,65 @@
+body {
+    margin: 0px;
+    padding: 20px;
+    background-color: #cccccc;
+}
+
+.banks-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bank {
+    border-style: solid;
+    border-color: grey;
+    margin: 10px;
+    width: 300px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 20px;
+    border-width: 2px;
+}
+.dol{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    margin: 20px;
+}
+
+.favorite{
+    width: 100px;
+    height: 50px;
+    border-style: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nadpis{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+
+}
+
